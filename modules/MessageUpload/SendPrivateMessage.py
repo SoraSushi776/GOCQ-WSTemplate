@@ -14,7 +14,7 @@ class SendPrivateMessage:
         printc(" - 发送到：" + str(self.user_id), "I")
         print()  # 空行
 
-        self.message = "【小巫正（ThatSkyBot）】 \n" + self.message
+        self.message = "【小巫正】 \n" + self.message
 
         return json.dumps(
             {
