@@ -1,3 +1,6 @@
+import os
+
+
 class Variable:  # Class:程序变量
     # 是否第一次启动
     isFirstStart = True

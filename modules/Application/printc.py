@@ -1,7 +1,7 @@
 import datetime
 
 
-def printc(string, printType="error"):  # 函数:打印带提示信息和颜色的文字
+def Printc(string, printType="error"):  # 函数:打印带提示信息和颜色的文字
     nowTime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # 获取当前时间
     printType = printType.lower()
     if printType == "e":

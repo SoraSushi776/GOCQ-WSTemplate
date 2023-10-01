@@ -1,10 +1,10 @@
 import json
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 
 class GetBotInfo:
-    printc("正在获取机器人信息", "I")
+    Printc("正在获取机器人信息", "I")
     print()  # 空行
 
     def dump():

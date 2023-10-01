@@ -1,6 +1,6 @@
 import json
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 
 class SetGroupKick:
@@ -10,10 +10,10 @@ class SetGroupKick:
         self.reject_add_request = reject_add_request
 
     def dump(self):
-        printc("正在将成员踢出群聊", "I")
-        printc(" - 被处理成员：" + str(self.user_id), "I")
-        printc(" - 群聊" + str(self.group_id), "I")
-        printc(" - 是否允许再次申请加群：" + str(self.reject_add_request), "I")
+        Printc("正在将成员踢出群聊", "I")
+        Printc(" - 被处理成员：" + str(self.user_id), "I")
+        Printc(" - 群聊" + str(self.group_id), "I")
+        Printc(" - 是否允许再次申请加群：" + str(self.reject_add_request), "I")
         print()  # 空行
 
         return json.dumps(

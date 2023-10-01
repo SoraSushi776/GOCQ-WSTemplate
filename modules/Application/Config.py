@@ -1,3 +1,7 @@
+import os
+import json
+
+
 class Config:  # Class:程序设置
     # 程序版本号
     version = "1.0.0"

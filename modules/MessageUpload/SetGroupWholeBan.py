@@ -1,6 +1,6 @@
 import json
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 
 class SetGroupWholeBan:
@@ -9,9 +9,9 @@ class SetGroupWholeBan:
         self.enable = False
 
     def dump(self):
-        printc("正在设置全体禁言", "I")
-        printc(" - 群组：" + str(self.group_id), "I")
-        printc(" - 是否开启：" + str(self.enable), "I")
+        Printc("正在设置全体禁言", "I")
+        Printc(" - 群组：" + str(self.group_id), "I")
+        Printc(" - 是否开启：" + str(self.enable), "I")
         print()  # 空行
 
         return json.dumps(

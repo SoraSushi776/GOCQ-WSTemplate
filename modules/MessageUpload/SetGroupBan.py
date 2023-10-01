@@ -1,6 +1,6 @@
 import json
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 
 class SetGroupBan:
@@ -10,10 +10,10 @@ class SetGroupBan:
         self.duration = duration
 
     def dump(self):
-        printc("正在禁言用户", "I")
-        printc(" - 用户：" + str(self.user_id), "I")
-        printc(" - 群组：" + str(self.group_id), "I")
-        printc(" - 时长：" + str(self.duration), "I")
+        Printc("正在禁言用户", "I")
+        Printc(" - 用户：" + str(self.user_id), "I")
+        Printc(" - 群组：" + str(self.group_id), "I")
+        Printc(" - 时长：" + str(self.duration), "I")
         print()  # 空行
 
         return json.dumps(

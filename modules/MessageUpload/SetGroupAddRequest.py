@@ -1,6 +1,6 @@
 import json
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 
 class SetGroupAddRequest:
@@ -11,9 +11,9 @@ class SetGroupAddRequest:
         self.reason = reason
 
     def dump(self):
-        printc("正在处理加群请求", "I")
-        printc(" - 消息内容：" + self.message, "I")
-        printc(" - 发送到：" + str(self.group_id), "I")
+        Printc("正在处理加群请求", "I")
+        Printc(" - 消息内容：" + self.message, "I")
+        Printc(" - 发送到：" + str(self.group_id), "I")
         print()  # 空行
 
         return json.dumps(

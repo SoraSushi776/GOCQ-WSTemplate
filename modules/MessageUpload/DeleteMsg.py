@@ -1,6 +1,6 @@
 import json
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 
 class DeleteMsg:
@@ -8,8 +8,8 @@ class DeleteMsg:
         self.message_id = message_id
 
     def dump(self):
-        printc("正在撤回消息", "I")
-        printc(" - 消息ID：" + str(self.message_id), "I")
+        Printc("正在撤回消息", "I")
+        Printc(" - 消息ID：" + str(self.message_id), "I")
         print()  # 空行
 
         return json.dumps(

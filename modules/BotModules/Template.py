@@ -3,7 +3,7 @@ import json
 import time
 import datetime
 
-from modules.Application.printc import printc
+from modules.Application.Printc import Printc
 
 from modules.MessageUpload.SendGroupMessage import SendGroupMessage
 
